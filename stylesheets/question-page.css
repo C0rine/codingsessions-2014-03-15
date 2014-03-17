@@ -1,0 +1,96 @@
+ body {
+   padding-left: 0;
+   padding-right: 0;
+ }
+ #page-wrapper {
+   position: relative;
+   width: 980px;
+   /* centers the document */
+   margin: 0 auto;
+   /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+   overflow: hidden;
+ }
+ /* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+   margin-top: 0 !important;
+ }
+ #absolute-wrapper {
+   position: relative;
+   width: 980px;
+   margin: 0 auto;
+   height: 1px;
+ }
+ #absolute-wrapper .control-label {
+   width: 220px;
+   height: 20px;
+   position: absolute;
+ }
+ #absolute-wrapper .control-label.control-label-1 {
+   top: 195px;
+   left: 135px;
+ }
+ #absolute-wrapper textarea {
+   width: 206px;
+   height: 90px;
+   position: absolute;
+   top: 239px;
+   left: 130px;
+ }
+ #absolute-wrapper .control-label.control-label-2 {
+   top: 372px;
+   left: 139px;
+ }
+ #absolute-wrapper .checkbox {
+   width: 280px;
+   height: 20px;
+   position: absolute;
+ }
+ #absolute-wrapper .checkbox.checkbox-1 {
+   left: 133px;
+ }
+ #absolute-wrapper .checkbox.checkbox-2 {
+   left: 129px;
+ }
+ #absolute-wrapper .checkbox.checkbox-3 {
+   left: 128px;
+ }
+ #absolute-wrapper .checkbox.checkbox-4 {
+   top: 421px;
+   left: 134px;
+ }
+ #absolute-wrapper .checkbox.checkbox-1.checkbox-5 {
+   top: 447px;
+ }
+ #absolute-wrapper .checkbox.checkbox-1.checkbox-6 {
+   top: 477px;
+ }
+ #absolute-wrapper .control-label.control-label-3 {
+   top: 554px;
+   left: 131px;
+ }
+ #absolute-wrapper .checkbox.checkbox-2.checkbox-7 {
+   top: 606px;
+ }
+ #absolute-wrapper .checkbox.checkbox-3.checkbox-8 {
+   top: 629px;
+ }
+ #absolute-wrapper .checkbox.checkbox-2.checkbox-9 {
+   top: 657px;
+ }
+ #absolute-wrapper .checkbox.checkbox-3.checkbox-10 {
+   top: 684px;
+ }
+ #absolute-wrapper .checkbox.checkbox-2.checkbox-11 {
+   top: 713px;
+ }
+ #absolute-wrapper .btn {
+   width: 72px;
+   height: 30px;
+   position: absolute;
+   top: 763px;
+   left: 127px;
+ }

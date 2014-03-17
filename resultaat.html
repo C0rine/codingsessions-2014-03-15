@@ -1,0 +1,48 @@
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<div id="googlemaps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.9307070631467!2d4.859351!3d52.37146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e273b1a9b005%3A0xc29dadd16d49e4dc!2sPrimera+Admiraal+de+Ruyterweg!5e0!3m2!1snl!2s!4v1394894215807" width="600" height="450" frameborder="0" style="border:0"></iframe>
+  <h2>Google maps kaart invoegen</h2>
+  <ul>
+  <li>Adres invullen in google maps</li>
+  <li>Klik op het tandwieltje rechtsonderin</li>
+  <li>Klik Kaart delen en insluiten</li>
+  <li>Kopieer de volgende code:</li>
+  </ul>
+  <textarea><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.9307070631467!2d4.859351!3d52.37146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e273b1a9b005%3A0xc29dadd16d49e4dc!2sPrimera+Admiraal+de+Ruyterweg!5e0!3m2!1snl!2s!4v1394894215807" width="600" height="450" frameborder="0" style="border:0"></iframe></textarea>
+</div>
+
+<div id="facebook">
+  <script>
+    var url = 'https://api.facebook.com/method/fql.query?query=select%20total_count,like_count,comment_count,share_count,click_count%20from%20link_stat%20where%20url=%27http://codingthehumanities.com/%27&format=json'
+    console.log('hoi corine');
+    console.log(url);
+    jQuery.getJSON(url, function( data, textStatus, jqXHR ) {
+      console.log(data);
+      $('#counter').html(data[0].total_count);
+      $('#sharecounter').html(data[0].share_count);
+    })
+  </script>
+  <h1>Coding the humanities is <span id="counter">?</span> keer geliked</h1>
+  <h1>Coding the humanities is <span id="sharecounter">?</span> keer geshared</h1>
+  <h2>Facebook like counter</h2>
+  <ul>
+  <li>Kopieer de api link</li>
+  <li>Vervang het adres in de link naar het adres waar je de counter van wilt laten zien</li>
+  <textarea>https://api.facebook.com/method/fql.query?query=select%20total_count,like_count,comment_count,share_count,click_count%20from%20link_stat%20where%20url=%27http://codingthehumanities.com/%27&format=json</textarea>
+  <li>Voeg de volgende javascript code toe aan je pagina</li>
+  <textarea>
+    <script>
+    var url = 'https://api.facebook.com/method/fql.query?query=select%20total_count,like_count,comment_count,share_count,click_count%20from%20link_stat%20where%20url=%27http://codingthehumanities.com/%27&format=json'
+    console.log('hoi corine');
+    console.log(url);
+    jQuery.getJSON(url, function( data, textStatus, jqXHR ) {
+      console.log(data);
+      $('#counter').html(data[0].total_count);
+      $('#sharecounter').html(data[0].share_count);
+    })
+  </script>
+  </textarea>
+  </ul>
+</div>
